@@ -1,0 +1,26 @@
+{
+  "name": "dotty-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start": "webpack serve --open 'Chrome'",
+    "build": "webpack --mode production",
+    "serve": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.0.2",
+    "css-minimizer-webpack-plugin": "^1.2.0",
+    "html-webpack-plugin": "^5.1.0",
+    "mini-css-extract-plugin": "^1.3.7",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
