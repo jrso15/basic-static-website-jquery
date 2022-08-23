@@ -1,6 +1,6 @@
 # basic-static-website-jquery
 
-A Basic static website that is built uisng HTML, CSS, JQUERY
+A Basic static website that is built uisng `HTML`, `CSS`, `JQUERY`
 
 
 ### Running the local environment ###
