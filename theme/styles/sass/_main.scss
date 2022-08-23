@@ -1,0 +1,200 @@
+.main {
+    padding-top: 4em;
+    section {
+        height: 100vh;
+        .grid {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            .gridList {
+               width: 30%;
+               margin-top: 2rem;
+               h4 {
+                color: #fff;
+                margin: 2rem 0;
+                font-weight: 600;
+                font-size: 1.3rem;
+               }
+               p {
+                color: #fff;
+                margin-bottom: 2rem;
+               }
+               &:last-child {
+                p {
+                    color: #d2d7d9;
+                }
+               }
+               .viewBtn {
+                    width: 11rem;
+                    height: 3rem;
+                    border: 0;
+                    font-size: 1rem;
+                    border-radius: .6rem;
+                    margin-top: 10rem;
+                    color: #fff;
+                    background-color: #178bc1;
+                    cursor: pointer;
+               }
+            }
+        }
+        &.video {
+            width: 100%;
+            .videoThumbnail {
+                width: 100%;
+                cursor: pointer;
+                position: relative;
+                .gradientOverlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 1;
+                    background-image: url("../../images/gradient.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                img {
+                    width: 100%;
+                }
+                iframe {
+                    width: 100%;
+                    height: 100vh;
+                    display: none;
+                  }
+                .playBtn {
+                position: absolute;
+                z-index: 666;
+                top:30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: transparent;
+                border: 0;
+                &:hover {
+                    cursor: pointer;
+                }
+                &:focus {
+                    outline: 0;
+                }
+                }
+            }
+        }
+        &.background {
+            background-color: #0c353d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            .gridBG {
+                display: flex;
+                position: absolute;
+                z-index: 1;
+                justify-content: space-evenly;
+                .gridBGList {
+                    width: 35%;
+                    align-items: center;
+                    display: grid;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                    }
+                    .title {
+                        font-size: 3em;
+                        font-weight: 400;
+                        text-align: center;
+                        line-height: 1.1;
+                    }
+                    .desc {
+                        color: #9fa8ab;
+                        margin: 1rem 0 3rem;
+                    }
+                }
+            }
+        }
+        &.solution {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .wrapper {
+                h2 {
+                    text-align: center;
+                }
+                .grid {
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-evenly;
+                    .gridList {
+                       width: 30%;
+                       margin-top: 2rem;
+                       h4 {
+                        color: #fff;
+                        margin: 2rem 0;
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                       }
+                       p {
+                        color: #fff;
+                        margin-bottom: 2rem;
+                       }
+                       &:last-child {
+                        p {
+                            color: #d2d7d9;
+                        }
+                       }
+                    }
+                }
+            }
+
+            background-color: #0c353d;
+            -webkit-box-shadow: inset 2px -23px 73px -25px rgba(23,71,90,0.19);
+            -moz-box-shadow: inset 2px -23px 73px -25px rgba(23,71,90,0.19);
+            box-shadow: inset 2px -23px 73px -25px rgba(23,71,90,0.19);
+
+        }
+        &.slideshow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #144252;
+            
+            .tabs {
+                width: 100%;
+              .tabsNav {
+                list-style: none;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                li {
+                    margin-right: 1rem;
+                    padding: .5rem 1rem;
+                    border-radius: .6rem;
+                    cursor: pointer;
+                    a {
+                        font-size: 1em;
+                        color: #839ba5;
+                        text-decoration: none;
+                        flex-direction: row;
+                    }
+                    &:hover {
+                        background-color: rgba(0,0,0,0.2);
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+                .active {
+                    background-color: rgba(0,0,0,0.2);
+                    a {
+                        color: #fff;
+                    }
+                }
+                }
+              .tabContent {
+                margin-top: 3em;
+              }
+            } 
+        }
+    }
+}
